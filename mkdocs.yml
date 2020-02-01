@@ -1,0 +1,69 @@
+# Project information
+site_name: "Recipes"
+site_description: "Food"
+site_author: ""
+site_url: "https://162.248.94.173/docs"
+
+# Repository
+repo_name: ""
+repo_url: ""
+
+# Copyright
+copyright: ""
+
+# Configuration
+theme:
+  name: "material"
+  language: "en"
+  logo:
+    icon: "cake"
+  palette:
+    primary: "brown"
+    accent: "black"
+  font:
+    text: "Comfortaa"
+    code: "Source Code Pro"
+
+extra:
+  manifest: "manifest.webmanifest"
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - "stylesheets/extra.css"
+extra_javascript:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+  - "javascripts/extra.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"
